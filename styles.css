@@ -16,6 +16,22 @@ body{
   font-size: 1rem; 
   font-family: "Be Vietnam Pro", sans-serif;
   color: var(--primary-blue);
+  text-align:center;
+}
+h1{
+  font-size: 2.4rem;
+  line-height: 3.25rem;
+}
+/* h2{
+
+} */
+h3{
+  font-size: 1.8rem;
+  line-height: 2.75rem;
+}
+h4{
+  font-size: 0.95rem;
+  font-weight: 500;
 }
 button, input{
   font-family: "Be Vietnam Pro", sans-serif;
@@ -35,17 +51,19 @@ ul{
   border: none;
 }
 .cta-button{
-  padding: 0.9rem 2rem; 
+  padding: 0.75rem 2rem; 
   border:none;
-  border-radius: 2rem;
-  box-shadow: 0 5px 10px hsla(12, 88%, 59%, 0.5);
   background-color: var(--primary-red);
   color:var(--light-red);
+  font-size:0.8rem;
+  border-radius: 2rem;
+  box-shadow: 0 5px 10px hsla(12, 88%, 59%, 0.5);
 }
 /* .cta-button--light{
 
 } */
 
+/* HEADER SECTION */
 .header__nav, .header__cta-button{
   display:none;
 }
@@ -53,7 +71,7 @@ ul{
 .header{
   display:flex; 
   justify-content: space-between;
-  padding: 3rem 1.5rem;
+  padding: 3rem 1.5rem 2rem 1.5rem;
 }
 .header__logo{
   width: 7.5rem;
@@ -81,15 +99,67 @@ ul{
   border-radius: 5px;
 }
 
-
-
-
-
-
-
+/* HERO SECTION  */
+.hero{
+  display: flex;
+  flex-direction: column-reverse;
+  padding: 0 1.5rem 6rem 1.5rem;
+  /* background-color: var(--light-red); */
+}
 .hero__image{
   width:100%;
+  margin-bottom: 0.75rem;
 }
+.hero__title{
+  margin-bottom: 0.25rem;
+}
+.hero__description{
+  margin-bottom:1.8rem;
+  color:var(--dark-gray);
+  font-weight:300;
+  line-height:1.75rem;
+}
+
+/* ABOUT SECTION */
+
+.about__general{
+  padding: 0 2rem; 
+}
+.about__description, .about__list-item__desc{
+  color:var(--dark-gray);
+  font-weight:300;
+  font-size:0.9rem;
+  line-height: 1.75rem;
+}
+.about__description{
+  margin-top: 1rem;
+  margin-bottom: 3.5rem;
+}
+.about__list{
+  margin-left: 1rem; 
+  text-align: left;
+}
+.about__list-item{
+  margin-bottom: 3rem;
+}
+.about__list-item__title{
+  background-color: var(--light-red);
+  padding:0.5rem 0;
+  margin-left: 10px;
+}
+.about__list-item__title::before{
+  content: attr(data-number); 
+  background-color: var(--primary-red);
+  color:var(--light-red);
+  padding: 0.5rem 1.4rem;
+  margin-left:-10px;
+  margin-right: 1rem;
+  border-radius: 2rem;
+}
+.about__list-item__desc{
+  margin-top: 1rem;
+}
+
 /* - Mobile: 375px
 - Desktop: 1440px 
 
@@ -108,6 +178,6 @@ Very Light Gray: hsl(0, 0%, 98%)
 ### Font
 
   font-family: "Be Vietnam Pro", sans-serif;
-  font-weight: 400, 500, 700; 
+  font-weight: 400, 500, 700; +300
   font-style: normal;
 */
