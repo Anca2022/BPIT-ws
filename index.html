@@ -8,6 +8,9 @@
       href="./assets/images/favicon-32x32.png"
       type="image/x-icon"
     />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css" />
     <title>Manage</title>
   </head>
@@ -19,10 +22,10 @@
         class="header__logo"
       />
       <nav class="header__nav">
-        <button class="clear-button">
+        <button class="header__close-mobile clear-button">
           <img src="./assets/images/icon-close.svg" alt="close menu" />
         </button>
-        <ul>
+        <ul class="header__nav-list">
           <li><a href="#">Pricing</a></li>
           <li><a href="#">Product</a></li>
           <li><a href="#">About Us</a></li>
@@ -30,7 +33,7 @@
           <li><a href="#">Community</a></li>
         </ul>
       </nav>
-      <button class="cta-button">Get Started</button>
+      <button class="header__cta-button cta-button">Get Started</button>
       <button class="clear-button">
         <img src="./assets/images/icon-hamburger.svg" alt="mobile menu" />
       </button>
@@ -51,6 +54,7 @@
         <img
           src="./assets/images/illustration-intro.svg"
           alt="Intro illustration containing several chats and reports"
+          class="hero__image"
         />
       </section>
 
@@ -73,7 +77,7 @@
             </p>
           </li>
           <li data-number="02">
-            <h4>Advanced buit-in reports</h4>
+            <h4>Advanced built-in reports</h4>
             <p>
               Set internal delivery estimates and track progress toward company
               goals. Our customisable dashboard helps you build out the reports
