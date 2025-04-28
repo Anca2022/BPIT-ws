@@ -5,6 +5,7 @@
   --light-red: hsl(13, 100%, 96%);
   --dark-gray: hsl(227, 12%, 61%);
   --light-gray: hsl(0, 0%, 98%);
+  --red-hover: rgb(244, 148, 123);
   --padding-lr: 1.5rem;
 }
 *,
@@ -43,6 +44,7 @@ input {
 }
 button {
   font-weight: 500;
+  cursor: pointer;
 }
 a {
   text-decoration: none;
@@ -64,9 +66,16 @@ ul {
   border-radius: 2rem;
   box-shadow: 0 5px 10px hsla(12, 88%, 59%, 0.5);
 }
+.cta-button:hover {
+  background-color: var(--red-hover);
+}
 .cta-button--light {
   background-color: white;
   color: var(--primary-red);
+}
+.cta-button--light:hover {
+  background-color: white;
+  color: var(--red-hover);
 }
 .font--small {
   color: var(--dark-gray);
@@ -83,6 +92,9 @@ ul {
   display: flex;
   justify-content: space-between;
   padding: 3rem var(--padding-lr) 2rem var(--padding-lr);
+}
+.header a:hover {
+  color: var(--dark-gray);
 }
 .header__logo {
   width: 7.5rem;
@@ -223,6 +235,9 @@ ul {
   max-width: 500px;
   margin: auto;
 }
+.footer__top a:hover {
+  color: var(--primary-red);
+}
 .footer__logo-social {
   display: flex;
   flex-direction: column-reverse;
@@ -240,8 +255,9 @@ ul {
   gap: 0.75rem;
   justify-content: space-around;
 }
-.footer__social img {
+.footer__social svg {
   width: 2rem;
+  height: 2rem;
 }
 .footer__nav ul {
   margin: 3.5rem auto;
@@ -415,8 +431,9 @@ ul {
   .footer__logo {
     width: 9rem;
   }
-  .footer__social img {
+  .footer__social svg {
     width: 1.25rem;
+    height: 1.25rem;
   }
   .footer__nav ul {
     width: unset;
@@ -488,9 +505,6 @@ ul {
     margin: 0;
     margin-bottom: 5.5rem;
     gap: 7rem;
-  }
-  .footer__social img {
-    width: 1.25rem;
   }
   .footer__nav ul {
     column-gap: 12rem;
