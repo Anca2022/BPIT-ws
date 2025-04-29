@@ -24,9 +24,8 @@
         alt="The logo of Manage"
         class="header__logo"
       />
-      <nav class="header__nav">
-        <!-- <nav class="header__nav header__nav--display"> -->
-        <button class="header__close-mobile clear-button">
+      <nav class="header__nav" id="header-nav">
+        <button class="header__close-mobile clear-button" id="close-menu">
           <img src="./assets/images/icon-close.svg" alt="close menu" />
         </button>
         <ul class="header__nav-list">
@@ -38,7 +37,7 @@
         </ul>
       </nav>
       <button class="header__cta-button cta-button">Get Started</button>
-      <button class="header__menu-button clear-button">
+      <button class="header__menu-button clear-button" id="open-menu">
         <img src="./assets/images/icon-hamburger.svg" alt="mobile menu" />
       </button>
     </header>
@@ -284,5 +283,6 @@
         <small>Copyright 2020. All Rights Reserved</small>
       </section>
     </footer>
+    <script src="main.js"></script>
   </body>
 </html>

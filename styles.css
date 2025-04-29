@@ -98,12 +98,13 @@ ul {
 }
 .header__logo {
   width: 7.5rem;
+  height: 1.25rem;
 }
 .header__nav--display {
   display: block;
   position: absolute;
   inset: 0;
-  background-image: linear-gradient(transparent, rgba(60, 60, 60, 0.6));
+  background-image: linear-gradient(transparent, rgba(60, 60, 60, 0.6), transparent);
 }
 .header__close-mobile {
   float: right;
@@ -474,6 +475,7 @@ ul {
   }
   .header__logo {
     width: 9rem;
+    height: 1.5rem;
   }
 
   .hero {
