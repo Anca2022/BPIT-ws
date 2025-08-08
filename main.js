@@ -13,5 +13,5 @@ function openMenu() {
 function closeMenu() {
   console.log("close");
   headerNav.classList.remove("header__nav--display");
-  openButton.style.display = "block";
+  openButton.style.display = "block"
 }
